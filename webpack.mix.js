@@ -273,12 +273,6 @@ mix.download({
         'url': 'https://unpkg.com/ionicons@4.2.6/dist/fonts/ionicons.svg',
         'dest': 'public/assets/plugins/ionicons/fonts/'
     }, {
-        'url': 'http://lab.xero.nu/bootstrap_calendar/lib/css/bootstrap_calendar.css',
-        'dest': 'public/assets/plugins/bootstrap-calendar/css/'
-    }, {
-        'url': 'http://lab.xero.nu/bootstrap_calendar/lib/js/bootstrap_calendar.min.js',
-        'dest': 'public/assets/plugins/bootstrap-calendar/js/'
-    }, {
         'url': 'https://raw.githubusercontent.com/extremeFE/bootstrap-colorpalette/master/css/bootstrap-colorpalette.css',
         'dest': 'public/assets/plugins/bootstrap-colorpalette/css/'
     }, {
