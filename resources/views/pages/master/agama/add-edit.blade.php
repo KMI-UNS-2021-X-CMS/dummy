@@ -41,7 +41,14 @@
     <div class="panel-body">
       <div class="form-group">
         <label for="name">Nama</label>
-        <input type="text" id="nama" name="nama" class="form-control" autofocus data-parsley-required="true" value="{{{ $data->nama ?? old('nama') }}}">
+        <select id="nama" name="nama" class="form-control" autofocus data-parsley-required="true" value="{{{ $data->nama ?? old('nama') }}}">>
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katolik">Katolik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>
+        </select>
+        {{-- <input type="number" id="nama" name="nama" class="form-control" autofocus data-parsley-required="true" value="{{{ $data->nama ?? old('nama') }}}"> --}}
       </div>
     </div>
     <!-- end panel-body -->
