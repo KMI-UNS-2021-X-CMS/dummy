@@ -19,6 +19,10 @@ Auth::routes([
     'register' => false,
 ]);
 
+Route::get('/', function () {
+    return csrf_token();
+});
+
 Route::get('/token', function () {
     return csrf_token();
 });
