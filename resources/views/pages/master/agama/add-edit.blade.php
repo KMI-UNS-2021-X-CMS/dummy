@@ -47,6 +47,7 @@
           <option value="Katolik">Katolik</option>
           <option value="Hindu">Hindu</option>
           <option value="Buddha">Buddha</option>
+          <option value="Konghuchu">Konghuchu</option>
         </select>
         {{-- <input type="number" id="nama" name="nama" class="form-control" autofocus data-parsley-required="true" value="{{{ $data->nama ?? old('nama') }}}"> --}}
       </div>
