@@ -313,3 +313,37 @@ Route::get('/helper/css', function () {
     return view('demo-pages/helper-css');
 });
 /* End Demo Page */
+
+/* Test */
+Route::get('/test/', function () {
+    return view('test/home',[
+        'title' => 'Home'
+    ]);
+});
+
+Route::get('/test/about', function () {
+    return view('test/about',[
+        'title' => 'About',
+        'name' => 'Amri',
+        'email' => 'amrihakim12@student.uns.ac.id'
+    ]);
+});
+
+Route::get('/test/blog', function () {
+    $blog_posts =[
+        [
+            "title" => "Judul 1",
+            "author" => "Amri",
+            "body" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi atque similique doloribus cumque minus provident reprehenderit delectus quas consectetur, ullam deserunt perspiciatis vel est dolorem maxime tempore, eaque cum totam. Nemo distinctio necessitatibus dignissimos odio voluptatibus eum, omnis est ipsa. Aut iste assumenda deleniti in, facere voluptatum tempore nemo veniam voluptatem suscipit odit quaerat asperiores sit maiores quod, incidunt eum reiciendis esse vero. Recusandae, animi explicabo veniam debitis nihil cum expedita, unde magni atque, quam sint sequi a consequatur modi est. Voluptates eum tenetur doloremque earum incidunt. Eius velit voluptatibus officia impedit nihil optio excepturi labore beatae placeat magnam?"
+        ],
+        [
+            "title" => "Judul 2",
+            "author" => "Hakim",
+            "body" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi atque similique doloribus cumque minus provident reprehenderit delectus quas consectetur, ullam deserunt perspiciatis vel est dolorem maxime tempore, eaque cum totam. Nemo distinctio necessitatibus dignissimos odio voluptatibus eum, omnis est ipsa. Aut iste assumenda deleniti in, facere voluptatum tempore nemo veniam voluptatem suscipit odit quaerat asperiores sit maiores quod, incidunt eum reiciendis esse vero. Recusandae, animi explicabo veniam debitis nihil cum expedita, unde magni atque, quam sint sequi a consequatur modi est. Voluptates eum tenetur doloremque earum incidunt. Eius velit voluptatibus officia impedit nihil optio excepturi labore beatae placeat magnam?"
+        ]
+    ];
+    return view('test/posts',[
+        'title' => 'Posts',
+        'posts' => $blog_posts
+    ]);
+});
