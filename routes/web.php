@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
+Route::get('test', 'TestController@index');
+
 Auth::routes([
     'register' => false,
 ]);
